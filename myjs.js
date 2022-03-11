@@ -24,42 +24,44 @@ function computerPlay(){
     let player = prompt('Enter your weapon and let us play:').toLowerCase();
     let computer = computerPlay();
       if (player == 'rock' && computer == 'scissors'){
-        return playerWins;
+        return referee = playerWins;
       }else if (player == 'paper' && computer == 'rock'){
-        return playerWins;
+        return referee = playerWins;
       }else if (player == 'scissors' && computer == 'paper'){
-        return playerWins;
+        return referee = playerWins;
       }else if (player == 'rock' && computer == 'paper'){
-        return computerWins;
+        return referee = computerWins;
       }else if (player == 'paper' && computer == 'scissors'){
-        return computerWins;
+        return referee = computerWins;
       }else if (player == 'scissors' && computer == 'rock'){
-        return computerWins;
+        return referee = computerWins;
       }else if (player === computer){
-        return drawGame;
+        return referee = drawGame;
       }else{
         return prompt('Check you selection again, please...');
       }  
   }
   //Declaration of some global variables
+  let referee = "";
   let playerScore = 0;
   let computerScore = 0;
   let draws = 0;
   let winner = "";
+
   //function keeps results
   function scoreBoard(){
-    if(playerWins){
+    if(referee === playerWins){
       playerScore++;
-      }else if(computerWins){
+      }else if(referee === computerWins){
       computerScore ++;
-      }else if(drawGame){
+      }else if(referee === drawGame){
       draws ++;
       }
   }
   //Playing a 5-Round Game
   function game(){
     for (let i = 0; i < 5; i++){
-      playRound(); // Calls playRound for (i) times
+      console.log(playRound()); // Calls playRound for (i) times
       scoreBoard(); //Records scores
      //Conditions for declaration of the winner
     if(playerScore > computerScore){
