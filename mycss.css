@@ -1,0 +1,64 @@
+*{
+
+}
+body{
+    font-family: monospace;
+    background-image: url('jeremy-hynes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+h3, #winner, #optionPlay, #optionComp{
+    font-size: 3vw;
+    color: palegreen;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#winner{
+    font-weight: 800;
+
+}
+
+h1{
+    font-size: 5vw;
+    color: peachpuff;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.red{
+    color: red;
+}
+
+.btn-sel{
+    border: 1px;
+    border-radius: 10px;
+    background-color: black;
+    color: peachpuff;
+    width: 150px;
+    text-align: center;
+    margin: 5px;
+    height: 50px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+#rps-btn{
+    text-align: center;
+}
+
+input:hover{
+    background-color: peachpuff;
+    color: black;
+    border: 5px solid black;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px 5px palegreen;
+    font-size: 150%;
+}
